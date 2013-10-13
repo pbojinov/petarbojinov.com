@@ -189,20 +189,25 @@
   <script src="js/jquery.js"></script>
   <script src="js/bootstrap.js"></script>
 
-  <!-- Custom JavaScript for the Side Menu - Put in a custom JS file if you want to clean this up -->
+  <!-- Custom JavaScript for the Side Menu -->
   <script>
-      $("#menu-close").click(function(e) {
-          e.preventDefault();
-          $("#sidebar-wrapper").toggleClass("active");
-      });
-  </script>
-  <script>
-      $("#menu-toggle").click(function(e) {
-          e.preventDefault();
-          $("#sidebar-wrapper").toggleClass("active");
-      });
-  </script>
-  <script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-32986721-4', 'petarbojinov.com');
+	ga('send', 'pageview');
+
+	$("#menu-close").click(function(e) {
+		e.preventDefault();
+		$("#sidebar-wrapper").toggleClass("active");
+	});
+
+	$("#menu-toggle").click(function(e) {
+		e.preventDefault();
+		$("#sidebar-wrapper").toggleClass("active");
+	});
+
     $(function() {
         $('a[href*=#]:not([href=#])').click(function() {
           if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
