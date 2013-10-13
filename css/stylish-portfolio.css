@@ -191,6 +191,8 @@ i.service-icon:hover {
 
 .callout h2 {
   font-size: 30px;
+  text-shadow: 0px 1px 0px #666666;
+  filter: dropshadow(color=#666666, offx=0, offy=1);
 }
 /* Portfolio */
 
