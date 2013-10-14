@@ -1,4 +1,4 @@
-pbojinov.github.io
+http://petarbojinov.com
 ==================
 
 My Personal website - http://petarbojinov.com
