@@ -1,3 +1,4 @@
 commit_images
 *.psd
 node_modules/
+backup/
