@@ -133,7 +133,9 @@ body {
 .profile-picture img {
   width: 200px;
   height: 200px;
-  border-radius: 6px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
   margin-bottom: 10px;
 }
 
@@ -156,6 +158,8 @@ h3, h2 {
 i.service-icon {
   border: 3px solid #ffffff;
   border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
   display: inline-block;
   font-size: 56px;
   width: 140px;

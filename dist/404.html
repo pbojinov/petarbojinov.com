@@ -1,0 +1,28 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="Petar Bojinov is a full-stack developer that lives on the web. His loves to mkae products that relay their message to millions of consumers and are used on a daily basis."><meta name="author" content="Petar Bojinov"><title>Page Not Found - Petar Bojinov</title><link type="text/css" rel="stylesheet" href="styles/portfolio-v0.0.2.min.css"><script async="">(function(i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function() {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+    ga('create', 'UA-32986721-4', 'petarbojinov.com');
+    ga('send', 'pageview');</script></head><body><div id="top" class="header"><div class="vert-text"><div class="animated bounceInRight"><h1>404</h1><h2>I couldn't the find the page.</h2></div><div class="profile-picture"><img class="animated fadeInUpBig" src="http://m.c.lnkd.licdn.com/mpr/mpr/shrink_200_200/p/1/005/01a/198/12dd89c.jpg"></div><div class="animated fadeInUpBig"><h3>Redirecting in <span id="time"></span> seconds...</h3><a id="ga-404" href="http://petarbojinov.com" class="btn btn-default btn-lg">Go Back In Time!</a></div></div></div><script type="text/javascript" src="scripts/portfolio-v0.0.2.min.js"></script><script async="">window.onload = function() {
+        var timeDom = document.getElementById('time'),
+            seconds = 8, //how long you want the redirect counter to be
+            counter = setInterval(timer, 1000),
+            redirectUrl = 'http://petarbojinov.com';
+        timeDom.innerHTML = seconds; //set intial time in the DOM to our seconds specified
+
+        function timer() {
+            seconds = seconds - 1;
+            if (seconds <= 0) {
+                clearInterval(counter);
+                window.location.href = redirectUrl;
+            }
+            timeDom.innerHTML = seconds;
+        }
+    }</script></body></html>

@@ -5,8 +5,7 @@
 /** 404 button **/
 $('#ga-404').on('click', function() {
     ga('send', 'event', 'Button', 'Press', '404');
-})
-
+});
 /** Menu Links **/
 $('#ga-pb').on('click', function() {
     ga('send', 'event', 'Menu', 'Press', 'Name');
@@ -18,7 +17,7 @@ $('#ga-intro').on('click', function() {
     ga('send', 'event', 'Menu', 'Press', 'About');
 });
 $('#ga-projects').on('click', function() {
-    ga('send', 'event', 'Menu', 'Press', 'Projects')
+    ga('send', 'event', 'Menu', 'Press', 'Projects');
 });
 $('#ga-contact').on('click', function() {
     ga('send', 'event', 'Menu', 'Press', 'Contact');
@@ -77,7 +76,7 @@ $("#menu-toggle").click(function(e) {
 
 $(function() {
     $('a[href*=#]:not([href=#])').click(function() {
-        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+        if (location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '') || location.hostname === this.hostname) {
 
             var target = $(this.hash);
             target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
