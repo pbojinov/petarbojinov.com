@@ -60,7 +60,7 @@ module.exports = function(grunt) {
                 dest: 'dist/styles/portfolio-v<%= pkg.version %>.min.css'
             }
         },
-        imagemin: { 
+        imagemin: {
             dynamic: {
                 options: { // Target options
                     optimizationLevel: 7,
@@ -108,6 +108,19 @@ module.exports = function(grunt) {
                     'dist/404.html': 'dist/404.html',
                 }
             }
+        },
+        // gzip assets 1-to-1 for production
+        compress: {
+            main: {
+                options: {
+                    mode: 'gzip',
+                    pretty: true
+                },
+                expand: true,
+                cwd: 'dist/',
+                src: ['**/*'],
+                dest: 'public/'
+            }
         }
     });
 
@@ -120,9 +133,12 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-htmlrefs');
     grunt.loadNpmTasks('grunt-contrib-htmlmin');
+    grunt.loadNpmTasks('grunt-contrib-compress');
 
 
     grunt.registerTask('image', ['imagemin']);
+
+    grunt.registerTask('gzip', ['compress']);
 
     // Default task(s).
     grunt.registerTask('dev', ['jshint', 'concat', 'uglify', 'cssmin', 'imagemin',
