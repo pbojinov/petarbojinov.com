@@ -79,21 +79,30 @@ body {
 }
 
 .sidebar-nav > .sidebar-brand {
-  color: #b2e0ff; /* color: #1abc9c; */
+  color: #cbeaff; /* color: #1abc9c; */
 }
 
 .sidebar-nav > .sidebar-brand {
 /*  color: #fff;
   background: none;*/
 }
-
+#menu-close {
+    -webkit-transition: all 0.2s  ease-in-out;
+  transition: all 0.2s  ease-in-out;
+}
 #menu-toggle {
   top: 0;
   right: 0;
   position: fixed;
   z-index: 1;
+  background-color: #2c3e50;
+  border: solid 1px #2c3e50;
   -webkit-transition: all 0.2s  ease-in-out;
   transition: all 0.2s  ease-in-out;
+}
+
+#menu-toggle:hover {
+    background-color: #3a526a;
 }
 
 .btn-primary:hover {
