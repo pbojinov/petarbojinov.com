@@ -16,9 +16,7 @@ $('#ga-top').on('click', function() {
 $('#ga-intro').on('click', function() {
     ga('send', 'event', 'Menu', 'Press', 'About');
 });
-$('#ga-projects').on('click', function() {
-    ga('send', 'event', 'Menu', 'Press', 'Projects');
-});
+
 $('#ga-contact').on('click', function() {
     ga('send', 'event', 'Menu', 'Press', 'Contact');
 });
@@ -29,17 +27,18 @@ $('#intro').on('click', function() {
 });
 
 /** Projects **/
-$('#ga-pen').on('click', function() {
-    ga('send', 'event', 'Projects', 'Press', 'Peninsula');
+$('#ga-opensource').on('click', function() {
+    ga('send', 'event', 'Interests', 'Press', 'Open Source');
+    window.location.href = 'https://github.com/pbojinov';
 });
-$('#ga-tel').on('click', function() {
-    ga('send', 'event', 'Projects', 'Press', 'Tekify');
+$('#ga-write').on('click', function() {
+    ga('send', 'event', 'Interests', 'Press', 'Writing');
+    console.log('click on write')
+    window.location.href = 'https://medium.com/@pbojinov';
 });
-$('#ga-d3ss').on('click', function() {
-    ga('send', 'event', 'Projects', 'Press', 'D3SS');
-});
-$('#ga-music').on('click', function() {
-    ga('event', 'send', 'Projects', 'Press', 'Music Discovery');
+$('#ga-perf').on('click', function() {
+    ga('send', 'event', 'Interests', 'Press', 'Performance');
+    window.location.href = 'https://twitter.com/hashtag/perfmatters';
 });
 
 /** Social  Buttons **/
