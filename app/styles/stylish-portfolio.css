@@ -1,331 +1,219 @@
-/* Global Styles */
+/* ------------------------------------
+   Global Styles 
+   ------------------------------------*/
 
-html,
-body {
-  height: 100%;
-  width: 100%;
+html, body {
+    height: 100%;
+    width: 100%;
 }
 
-::-moz-selection { background: #9b59b6; color: #fff; text-shadow: none; }
-::selection { background: #9b59b6; color: #fff; text-shadow: none; }
-
+::-moz-selection {
+    background: #9b59b6;
+    color: #fff;
+    text-shadow: none;
+}
+::selection {
+    background: #9b59b6;
+    color: #fff;
+    text-shadow: none;
+}
 .vert-text {
-  display: table-cell;
-  vertical-align: middle;
-  text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.3);
 }
-
+.vert-text.darker {
+    background-color: rgba(0, 0, 0, 0.6);    
+}
 .vert-text h1 {
-  padding: 0;
-  margin: 0;
-  font-size: 4.5em;
-  font-weight: 700;
+    padding: 0;
+    margin: 0;
+    font-size: 3.5em;
+    font-weight: 700;
 }
 
-/* Side Menu */
-
-#sidebar-wrapper {
-  margin-right: -250px;
-  right: 0;
-  width: 250px;
-  background: #2c3e50;
-  position: fixed;
-  height: 100%;
-  overflow-y: auto;
-  z-index: 1000;
-  -webkit-transition: all 0.4s ease 0s;
-  transition: all 0.4s ease 0s;
-}
-
-.sidebar-nav {
-  position: absolute;
-  top: 0;
-  width: 250px;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.sidebar-nav li {
-  line-height: 50px;
-  text-indent: 20px;
-  font-size: 20px;
-}
-
-.sidebar-nav li a {
-  color: #ecf0f1;
-  display: block;
-  text-decoration: none;
-  font-weight: 300;
-  -webkit-transition: all 0.2s  ease-in-out;
-  transition: all 0.2s  ease-in-out;
-}
-
-.sidebar-nav li a:hover {
-  color: #fff;
-  background: rgba(255,255,255,0.2);
-  text-decoration: none;
-}
-
-.sidebar-nav li a:active,
-.sidebar-nav li a:focus {
-  text-decoration: none;
-}
-
-.sidebar-nav > .sidebar-brand {
-  height: 55px;
-  line-height: 55px;
-  font-size: 25px;
-}
-
-.sidebar-nav > .sidebar-brand {
-  color: #cbeaff; /* color: #1abc9c; */
-}
-
-.sidebar-nav > .sidebar-brand {
-/*  color: #fff;
-  background: none;*/
-}
-#menu-close {
-    -webkit-transition: all 0.2s  ease-in-out;
-  transition: all 0.2s  ease-in-out;
-}
-#menu-toggle {
-  top: 0;
-  right: 0;
-  position: fixed;
-  z-index: 1;
-  background-color: #2c3e50;
-  border: solid 1px #2c3e50;
-  -webkit-transition: all 0.2s  ease-in-out;
-  transition: all 0.2s  ease-in-out;
-}
-
-#menu-toggle:hover {
-    background-color: #3a526a;
-}
-
-.btn-primary:hover {
-  border: solid 1px #357EBD;
-}
-
-#sidebar-wrapper.active {
-  right: 250px;
-  width: 250px;
-  -webkit-transition: all 0.4s ease 0s;
-  transition: all 0.4s ease 0s;
-}
-
-.toggle {
-  margin: 5px 5px 0 0;
-}
-
-.flatBlue {
-  background-color: #2980b9;
-}
-
-/* Full Page Image Header Area */
+/* ------------------------------------
+   Full Page Image Header Area 
+   ------------------------------------*/
 
 .header {
-  display: table;
-  height: 100%;
-  width: 100%;
-  position: relative;
-  background: url(../images/bg.jpg) no-repeat center center fixed;
-  background-size: cover;
+    display: table;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    /*background: url(../images/bg.jpg) no-repeat center center fixed;*/
+    /*background: url(../images/san_francisco_skyline_9313.jpg) no-repeat center center fixed;*/
+    
+    background: url(../images/sf-alcatraz.jpg) no-repeat center center fixed;
+    background-size: cover;
 }
-
 .header .vert-text {
-  color: #34495e; /* color: #34495e; */
-  /*text-shadow: 0px 1px 0px #ffffff;
-  -webkit-filter: dropshadow(color=#ffffff, offx=0, offy=1);
-  filter: dropshadow(color=#ffffff, offx=0, offy=1);*/
+    color: #ECF0F1;
 }
-
 .header h3 {
-  color: #34495e;
+    color: #ECF0F1;
+    font-weight: 100;
 }
-
 .header .intro-button {
-  color: black;
-  -webkit-transition: all 0.2s  ease-in-out;
-  transition: all 0.2s  ease-in-out;
+    color: #ECF0F1;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    margin-top: 15px;
+    background-color: transparent;
+    border: solid 2px;
+    border-color: #FF974F;
+    text-shadow: none;
+    font-weight: 200;
+}
+.header .intro-button:hover {
+    /*background-color: rgba(255, 255, 255, 0.5);*/
+    color: white;
+    background-color: #FF974F;
 }
 
-.header .btn.btn-default.btn-lg.intro-button {
-  margin-top: 15px;
-  background-color: transparent;
-  border: solid 2px #2c3e50;
-  text-shadow: none;
-}
-
-.header .btn.btn-default.btn-lg.intro-button:hover {
-  background-color: rgba(255,255,255,0.5);
-}
-
-/* Intro */
+/* 
+  make the c2a button a more visible color on smaller height screens
+  because the dark colors conflict with the bottom of the background image 
+*/
+/*@media screen and (max-height: 750px) {
+    .header .intro-button {
+        color: #ccc;
+        border-color: #ccc;
+    }
+}*/
+/* ------------------------------------
+   Intro 
+   ------------------------------------*/
 
 .intro {
-  padding: 65px 0;
-  color: #2c3e50;
+    padding: 65px 0;
+    color: #2c3e50;
 }
-
 .profile-picture img {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  margin-bottom: 10px;
-  border: 2px solid #B0CEEA;
-  -webkit-transition: all 1s ease 0s;
-  transition: all 1s ease 0s;
-  /* box-shadow: 0 -2px 2px -2px #99c3ea; */
-  margin-left: 0px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    margin-bottom: 10px;
+    /*border: 1px solid black;*/
+    -webkit-transition: all 1s ease 0s;
+    transition: all 1s ease 0s;
+    /* box-shadow: 0 -2px 2px -2px #99c3ea; */
+    
+    margin-left: 0px;
 }
-
 .profile-picture img:hover {
-  -webkit-filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
 }
-
 h3, h2 {
-  margin: 10px 0 15px 0;
+    margin: 10px 0 15px 0;
 }
 
-/* Services */
+/* ------------------------------------
+   Services 
+   ------------------------------------*/
 
 .services {
-  background: #3498db;
-  padding: 65px 0 70px 0;
-  color: #ffffff;
+    background: #3498db;
+    padding: 65px 0 70px 0;
+    color: #ffffff;
 }
-
 .services h4 {
-  line-height: 23px;
+    line-height: 23px;
 }
-
 .service-item {
-  margin-bottom: 15px;
+    margin-bottom: 15px;
 }
-
 i.service-icon {
-  border: 3px solid #ffffff;
-  border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  display: inline-block;
-  font-size: 56px;
-  width: 140px;
-  height: 140px;
-  line-height: 136px;
-  vertical-align: middle; 
-  text-align: center;
-
-  -webkit-transition: all 0.2s  ease-in-out;
-  transition: all 0.2s  ease-in-out;
+    border: 3px solid #ffffff;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    display: inline-block;
+    font-size: 56px;
+    width: 140px;
+    height: 140px;
+    line-height: 136px;
+    vertical-align: middle;
+    text-align: center;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
 }
-
 .interests {
-  margin-right: 15px;
-  padding-top: 10px;
-  padding-bottom: 5px;
-  border-radius: 5px;
-  -webkit-transition: all 0.2s  ease-in-out;
-  transition: all 0.2s  ease-in-out;
+    margin-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    border-radius: 5px;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
 }
-
 .interests:hover {
-  background-color: #4AA3DF;
-  cursor: pointer;
-  box-shadow: 0 5px 5px -5px #0886db;
+    /*background-color: #4AA3DF;*/
+    cursor: pointer;
+    /*box-shadow: 0 5px 5px -5px #0886db;*/
 }
-
 .interests:hover i.service-icon {
-  font-size: 100px;
+    font-size: 100px;
 }
-
-
 .interests:hover i.icon-github {
-  font-size: 125px;
+    font-size: 125px;
 }
 .interests:hover i.icon-pencil {
-  -webkit-transform: translatez(0) rotate(-45deg);
-  -ms-transform: translatez(0) rotate(-45deg);
-  transform: translatez(0) rotate(-45deg);
+    -webkit-transform: translatez(0) rotate(-45deg);
+    -ms-transform: translatez(0) rotate(-45deg);
+    transform: translatez(0) rotate(-45deg);
 }
 .interests:hover i.icon-rocket {
-  -webkit-transform: translatez(0) rotate(-45deg);
-  -ms-transform: translatez(0) rotate(-45deg);
-  transform: translatez(0) rotate(-45deg);
+    -webkit-transform: translatez(0) rotate(-45deg);
+    -ms-transform: translatez(0) rotate(-45deg);
+    transform: translatez(0) rotate(-45deg);
 }
 
-/* Callout */
+/* ------------------------------------
+   Callout 
+   ------------------------------------*/
+
 .callout {
-  color: #ffffff;
-  display: table;
-  height: 400px;
-  width: 100%;
-  background: url(../images/section-two.jpg) no-repeat center center fixed;
-  background-size: cover;
+    color: #ffffff;
+    display: table;
+    height: 400px;
+    width: 100%;
+    background-image: url(../images/section-two.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
 }
-
 .callout h2 {
-  font-size: 30px;
-/*  text-shadow: 0px 1px 0px #666666;
-  -webkit-filter: dropshadow(color=#666666, offx=0, offy=1);
-  filter: dropshadow(color=#666666, offx=0, offy=1);*/
+    font-size: 30px;
 }
 
-/* Portfolio */
-/*
-.portfolio {
-  padding: 50px 0;
-}
-
-.portfolio-item {
-  margin-bottom: 25px;
-}
-
-.img-portfolio {
-  margin: 0 auto;
-  opacity: 0.7;
-  -webkit-transition: opacity 0.3s  ease-in-out;
-  transition: opacity 0.3s  ease-in-out;
-}
-
-.img-portfolio:hover {
-  zoom: 1;
-  filter: alpha(opacity=100);
-  opacity: 1.0;
-}
-*/
-
-/* Call to Action */
+/* ------------------------------------
+   Call to Action - Get in touch
+   ------------------------------------*/
 
 .call-to-action {
-  color: #ffffff;
-  background: #d35400;
-  padding: 65px 0;
+    color: #ffffff;
+    background: #d35400;
+    padding: 65px 0;
 }
-
 .call-to-action .btn {
-  margin: 10px;
+    margin: 10px;
 }
-
 /* Footer */
 
 footer {
-  padding: 100px 0;
+    padding: 100px 0;
 }
-
 footer a {
-  color: black;
-  font-size: 15px;
-  -webkit-transition: all 0.2s ease 0s;
-  transition: all 0.2s ease 0s;
+    color: black;
+    font-size: 15px;
+    -webkit-transition: all 0.2s ease 0s;
+    transition: all 0.2s ease 0s;
 }
-
 footer a:hover {
-  text-decoration: none;
-  color: #E74C3C;
+    text-decoration: none;
+    color: #E74C3C;
 }

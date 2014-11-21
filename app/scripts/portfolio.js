@@ -74,6 +74,9 @@ $("#menu-toggle").click(function(e) {
 });
 
 $(function() {
+    $(function(){
+        // $('.callout').okvideo({ video: 'https://vimeo.com/86394920' });
+    });
     $('a[href*=#]:not([href=#])').click(function() {
         if (location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '') || location.hostname === this.hostname) {
 
