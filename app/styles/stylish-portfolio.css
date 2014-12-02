@@ -17,13 +17,15 @@ html, body {
     color: #fff;
     text-shadow: none;
 }
+.background-mask-dark {
+    background-color: rgba(0, 0, 0, 0.3);
+}
 .vert-text {
     display: table-cell;
     vertical-align: middle;
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.3);
 }
-.vert-text.darker {
+.background-mask-dark.darker {
     background-color: rgba(0, 0, 0, 0.6);    
 }
 .vert-text h1 {
@@ -36,12 +38,13 @@ html, body {
 /* ------------------------------------
    Full Page Image Header Area 
    ------------------------------------*/
-
-.header {
+.full-screen {
     display: table;
     height: 100%;
     width: 100%;
     position: relative;
+}
+.header {
     /*background: url(../images/bg.jpg) no-repeat center center fixed;*/
     /*background: url(../images/san_francisco_skyline_9313.jpg) no-repeat center center fixed;*/
     
@@ -178,7 +181,7 @@ i.service-icon {
 .callout {
     color: #ffffff;
     display: table;
-    height: 400px;
+    /*height: 400px;*/
     width: 100%;
     background-image: url(../images/section-two.jpg);
     background-repeat: no-repeat;
@@ -202,18 +205,30 @@ i.service-icon {
 .call-to-action .btn {
     margin: 10px;
 }
-/* Footer */
 
 footer {
     padding: 100px 0;
 }
-footer a {
+
+.contact-icons {
+    margin-top: 50px;
+}
+.contact-icons a {
     color: black;
     font-size: 15px;
     -webkit-transition: all 0.2s ease 0s;
     transition: all 0.2s ease 0s;
 }
-footer a:hover {
+.contact-icons a:hover {
     text-decoration: none;
-    color: #E74C3C;
+    color: #333;
+}
+
+/* ------------------------------------
+   Generic Shared
+   ------------------------------------*/
+
+.lead {
+    width: 500px;
+    margin: 0 auto;
 }
