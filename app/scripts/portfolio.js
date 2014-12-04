@@ -1,24 +1,19 @@
 /**
- * GA code
+ * petarbojinov.com - 2014
+ */
+
+var PB = (function() {
+    // $('.callout').okvideo({ video: 'https://vimeo.com/86394920' });
+    window.sr = new scrollReveal();
+})();
+
+/**
+ * GA tracking
  */
 
 /** 404 button **/
 $('#ga-404').on('click', function() {
     ga('send', 'event', 'Button', 'Press', '404');
-});
-/** Menu Links **/
-$('#ga-pb').on('click', function() {
-    ga('send', 'event', 'Menu', 'Press', 'Name');
-});
-$('#ga-top').on('click', function() {
-    ga('send', 'event', 'Menu', 'Press', 'Home');
-});
-$('#ga-intro').on('click', function() {
-    ga('send', 'event', 'Menu', 'Press', 'About');
-});
-
-$('#ga-contact').on('click', function() {
-    ga('send', 'event', 'Menu', 'Press', 'Contact');
 });
 
 /** Section 1 **/
@@ -33,7 +28,6 @@ $('#ga-opensource').on('click', function() {
 });
 $('#ga-write').on('click', function() {
     ga('send', 'event', 'Interests', 'Press', 'Writing');
-    console.log('click on write')
     window.location.href = 'https://medium.com/@pbojinov';
 });
 $('#ga-perf').on('click', function() {
@@ -59,35 +53,4 @@ $('#ga-google').on('click', function() {
 });
 $('#ga-mail').on('click', function() {
     ga('send', 'event', 'Social', 'Press', 'Email');
-});
-
-/** Menu Specific Code **/
-$("#menu-close").click(function(e) {
-    e.preventDefault();
-    $("#sidebar-wrapper").toggleClass("active");
-});
-
-$("#menu-toggle").click(function(e) {
-    e.preventDefault();
-    $("#sidebar-wrapper").toggleClass("active");
-    ga('send', 'event', 'Menu', 'Press', 'Toggle');
-});
-
-$(function() {
-    $(function(){
-        // $('.callout').okvideo({ video: 'https://vimeo.com/86394920' });
-    });
-    $('a[href*=#]:not([href=#])').click(function() {
-        if (location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '') || location.hostname === this.hostname) {
-
-            var target = $(this.hash);
-            target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-            if (target.length) {
-                $('html,body').animate({
-                    scrollTop: target.offset().top
-                }, 1000);
-                return false;
-            }
-        }
-    });
 });

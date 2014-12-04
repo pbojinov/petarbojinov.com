@@ -46,17 +46,20 @@
     <!-- Full Page Image Header Area -->
     <div id="top" class="header full-screen">
         <div class="vert-text background-mask-dark">
-            <div class="profile-picture">
-                <!-- <img class="animated bounceIn" src="images/headshot.jpg" /> -->
-                <img class="animated bounceIn" src="images/purple-headshot.jpg" />
-            </div>
-            <div class="animated fadeInUpBig">
-                <h1>Petar Bojinov</h1>
-                <h3>
-                    Creative and intuitive solutions <br>for the web.
-                </h3>
+            <div class="reveal-wrapper" data-sr="enter bottom and scale down 10% over 1s">            
+                <div class="profile-picture">
+                    <!-- <img class="animated bounceIn" src="images/headshot.jpg" /> -->
+                    <img src="images/purple-headshot.jpg" />
+                </div>
+                <!-- <div class="animated fadeInUpBig"> -->
+                <div>
+                    <h1>Petar Bojinov</h1>
+                    <h3>
+                        Creative and intuitive solutions <br>for the web.
+                    </h3>
 
-                <a href="#intro" class="btn btn-default btn-lg intro-button">About Me</a>
+                    <a href="#intro" class="btn btn-default btn-lg intro-button">About Me</a>
+                </div>
             </div>
         </div>
     </div>
@@ -66,7 +69,7 @@
     <div id="intro" class="intro full-screen">
 <!--         <div class="container">
             <div class="row">
- -->                <div class="vert-text">
+ -->                <div class="vert-text" data-sr="enter left please, and hustle 50px">
                 <!-- <div class="col-md-6 col-md-offset-3 text-center"> -->
                     <!-- <i class="icon-screenshot icon-5x"></i> -->
                     <!-- <i class="icon-bullseye icon-4x"></i> -->
@@ -82,7 +85,7 @@
     <!-- Services -->
     <div id="services" class="callout full-screen">
         <div class="vert-text background-mask-dark darker">            
-            <div class="container">
+            <div class="container" data-sr="wait 0.4s and then ease-in-out 100px">
                 <div class="row">
                     <div class="col-md-4 col-md-offset-4 text-center">
                         <h2>My Interests</h2>
@@ -129,7 +132,7 @@
 
     <!-- Call to Action -->
     <div class="call-to-action full-screen">
-        <div class="vert-text">
+        <div class="vert-text" data-sr="enter bottom and scale up 30% over 1s">
             <h2>I would love to hear from you. Lets get in touch. </h2>
             <p>
             <ul class="list-inline contact-icons">
@@ -175,6 +178,7 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="scripts/jquery.js"></script>
     <script src="scripts/bootstrap.min.js"></script>
+    <script src="bower_components/scrollReveal.js/dist/scrollReveal.js"></script>
     <script src="scripts/portfolio.js"></script>
     <!-- endref -->
 
