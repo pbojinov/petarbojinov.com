@@ -32,7 +32,6 @@ $('#ga-write').on('click', function() {
 });
 $('#ga-perf').on('click', function() {
     ga('send', 'event', 'Interests', 'Press', 'Performance');
-    window.location.href = 'https://twitter.com/hashtag/perfmatters';
 });
 
 /** Social  Buttons **/
