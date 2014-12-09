@@ -208,7 +208,7 @@ i.service-icon {
 
 .call-to-action {
     color: #ffffff;
-    background: #d35400;
+    background: #FF974F;
     padding: 65px 0;
 }
 .call-to-action .btn {
@@ -223,14 +223,14 @@ footer {
     margin-top: 50px;
 }
 .contact-icons a {
-    color: black;
+    color: #333;
     font-size: 15px;
     -webkit-transition: all 0.2s ease 0s;
     transition: all 0.2s ease 0s;
 }
 .contact-icons a:hover {
     text-decoration: none;
-    color: #333;
+    color: white;
 }
 
 /* ------------------------------------
