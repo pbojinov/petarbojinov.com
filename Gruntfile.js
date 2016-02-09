@@ -141,6 +141,10 @@ module.exports = function(grunt) {
     grunt.registerTask('gzip', ['compress']);
 
     // Default task(s).
+    grunt.registerTask('default', [ 'concat', 'uglify', 'cssmin', 'imagemin',
+        'copy', 'htmlrefs', 'htmlmin'
+    ]);    
+
     grunt.registerTask('dev', ['jshint', 'concat', 'uglify', 'cssmin', 'imagemin',
         'copy', 'htmlrefs', 'htmlmin', 'jshint'
     ]);

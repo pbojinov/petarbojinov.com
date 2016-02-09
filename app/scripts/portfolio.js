@@ -1,5 +1,5 @@
 /**
- * petarbojinov.com - 2014
+ * petarbojinov.com - 2016
  */
 
 var PB = (function() {
@@ -24,14 +24,18 @@ $('#intro').on('click', function() {
 /** Projects **/
 $('#ga-opensource').on('click', function() {
     ga('send', 'event', 'Interests', 'Press', 'Open Source');
-    window.location.href = 'https://github.com/pbojinov';
+    // window.location.href = 'https://github.com/pbojinov';
+    window.open('https://github.com/pbojinov', '_blank');
 });
 $('#ga-write').on('click', function() {
     ga('send', 'event', 'Interests', 'Press', 'Writing');
-    window.location.href = 'https://medium.com/@pbojinov';
+    // window.location.href = 'https://medium.com/@pbojinov';
+    window.open('https://medium.com/@pbojinov', '_blank');
 });
 $('#ga-perf').on('click', function() {
     ga('send', 'event', 'Interests', 'Press', 'Performance');
+    // window.location.href = 'https://twitter.com/hashtag/perfmatters';
+    window.opne('https://twitter.com/hashtag/perfmatters', '_blank');
 });
 
 /** Social  Buttons **/
@@ -52,4 +56,12 @@ $('#ga-google').on('click', function() {
 });
 $('#ga-mail').on('click', function() {
     ga('send', 'event', 'Social', 'Press', 'Email');
+});
+
+/** Next Section Pagination */
+$('.next-section').on('click', function() {
+    var nextSection = $(this).data('next');
+    $('html, body').animate({
+        scrollTop: $(nextSection).offset().top
+    }, 500);
 });
