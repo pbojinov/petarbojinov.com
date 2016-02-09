@@ -76,13 +76,17 @@
     <div id="intro" class="intro full-screen">
 <!--         <div class="container">
             <div class="row">
- -->            <div class="vert-text">
+ -->            
+                <div id="large-header" class="large-header" data-sr="wait 0.2s and then enter bottom and scale up 30%">
+                    <canvas id="canvas-triangles"></canvas>
+                </div>
+                <div class="vert-text">
                 <!-- <div class="col-md-6 col-md-offset-3 text-center"> -->
                     <!-- <i class="icon-screenshot icon-5x"></i> -->
                     <!-- <i class="icon-bullseye icon-4x"></i> -->
                     <!-- <i class="icon-cloud icon-4x"></i> -->
                     <h2 data-sr="wait 0.2s and then enter left please, and hustle 50px">Specializing in web based technologies.</h2>
-                    <p class="lead" data-sr="wait 0.4s and then enter left please, and hustle 50px">I am passionate about making products that millions of people use on a daily basis.</p>
+                    <p class="lead" data-sr="wait 0.4s and then enter left please, and hustle 50px">Passionate about making products that millions of people use on a daily basis.</p>
                 </div>
                 <div class="next-section" data-next="#services" data-sr="wait 0.5s and then enter left please, and hustle 50px">
                     <span class="fa-stack fa-lg">
@@ -101,7 +105,7 @@
             <div class="container">
                 <div class="row" data-sr="wait 0.4s and then ease-in-out 100px">
                     <div class="col-md-4 col-md-offset-4 text-center">
-                        <h2>My Interests</h2>
+                        <h2>Interests</h2>
                     </div>
                 </div>
                 <div class="row">
@@ -205,10 +209,17 @@
     <!-- ref:js scripts/<%= buildNumber %>.min.js -->
     <!-- Bootstrap core JavaScript -->
     <!-- Placed at the end of the document so the pages load faster -->
+
     <script src="scripts/jquery.js"></script>
+    <script src="bower_components/jquery-debounce/jquery.debounce.js"></script>
     <script src="scripts/bootstrap.min.js"></script>
     <script src="bower_components/scrollReveal.js/dist/scrollReveal.js"></script>
     <script src="scripts/portfolio.js"></script>
+
+    <script src="scripts/TweenLite.min.js"></script>
+    <script src="scripts/EasePack.min.js"></script>
+    <script src="scripts/rAF.js"></script>
+    <script src="scripts/triangles-explosion.js"></script>
     <!-- endref -->
 
 </body>
