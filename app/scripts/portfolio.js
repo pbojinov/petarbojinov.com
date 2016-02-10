@@ -37,6 +37,11 @@ $('#ga-perf').on('click', function() {
     // window.location.href = 'https://twitter.com/hashtag/perfmatters';
     window.opne('https://twitter.com/hashtag/perfmatters', '_blank');
 });
+$('#ga-music').on('click', function() {
+    ga('send', 'event', 'Interests', 'Press', 'Music');
+    // window.location.href = 'https://twitter.com/hashtag/perfmatters';
+    window.opne('https://soundcloud.com/almanor/guess-who', '_blank');
+});
 
 /** Social  Buttons **/
 $('#ga-linkedin').on('click', function() {
@@ -56,6 +61,18 @@ $('#ga-google').on('click', function() {
 });
 $('#ga-mail').on('click', function() {
     ga('send', 'event', 'Social', 'Press', 'Email');
+});
+$('#ga-medium').on('click', function() {
+    ga('send', 'event', 'Social', 'Press', 'Medium');
+});
+$('#ga-soundcloud').on('click', function() {
+    ga('send', 'event', 'Social', 'Press', 'Soundcloud');
+});
+$('#ga-vimeo').on('click', function() {
+    ga('send', 'event', 'Social', 'Press', 'Vimeo');
+});
+$('#ga-book').on('click', function() {
+    ga('send', 'event', 'Social', 'Press', 'Books');
 });
 
 /** Next Section Pagination */

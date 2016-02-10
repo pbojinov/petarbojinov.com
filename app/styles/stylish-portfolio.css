@@ -3,8 +3,8 @@
    ------------------------------------*/
 
 html, body {
-    height: 100%;
-    width: 100%;
+    height:100%;
+    width:100%;
     font-family: 'Arimo', sans-serif;
 }
 
@@ -34,7 +34,7 @@ h1, h2, h3, h4, h5, h6, p {
     text-align: center;
 }
 .background-mask-dark.darker {
-    background-color: rgba(0, 0, 0, 0.6);    
+    background-color: rgba(0, 0, 0, 0.8);    
 }
 .vert-text h1 {
     padding: 0;
@@ -69,7 +69,7 @@ h1, h2, h3, h4, h5, h6, p {
     left: 46%;
     -webkit-transition: opacity 0.2s ease-in-out;
     transition: opacity 0.2s ease-in-out;
-    opacity: 0.6;
+    opacity: 0.7;
 }
 
 .next-section-text:hover, .next-section-text:focus {
@@ -101,6 +101,10 @@ h1, h2, h3, h4, h5, h6, p {
 /* ------------------------------------
    Full Page Image Header Area 
    ------------------------------------*/
+#top h3 {
+    padding-left: 15px;
+    padding-right: 15px;
+}
 .full-screen {
     display: table;
     height: 100%;
@@ -144,12 +148,14 @@ h1, h2, h3, h4, h5, h6, p {
   make the c2a button a more visible color on smaller height screens
   because the dark colors conflict with the bottom of the background image 
 */
-/*@media screen and (max-height: 750px) {
-    .header .intro-button {
-        color: #ccc;
-        border-color: #ccc;
+@media screen and (max-height: 600px) {
+    #top h1 {
+        padding: 0 15px 0 15px
     }
-}*/
+    .call-to-action .next-section-text {
+        left: 50%;
+    }
+}
 /* ------------------------------------
    Intro 
    ------------------------------------*/
@@ -175,6 +181,7 @@ h1, h2, h3, h4, h5, h6, p {
     /*color: white;*/
     color: #232323;
     font-size: 1.6em;
+    font-weight: bold;
 }
 #intro .vert-text {
     position: relative;
@@ -211,14 +218,13 @@ h3, h2 {
     padding: 65px 0 70px 0;
     color: #ffffff;
 }
-.callout h2 {
-    margin-bottom: 50px;
-}
+
 .callout h4 {
-    font-weight: 200;
-    line-height: 1.4;
-    font-size: 1em;
-    letter-spacing: 1px;
+    /*font-weight: 200;*/
+    line-height: 1.3em;
+    font-size: 1.3em;
+    letter-spacing: 0.5px;
+    font-weight: bold;
 }
 .callout a:hover h4 {
     text-decoration: none;
@@ -243,7 +249,7 @@ i.service-icon {
     transition: all 0.2s ease-in-out;
 }
 .interests {
-    margin-right: 15px;
+    /*margin-right: 15px;*/
     padding-top: 10px;
     padding-bottom: 5px;
     border-radius: 5px;
@@ -272,6 +278,23 @@ i.service-icon {
     transform: translatez(0) rotate(-45deg);
 }
 
+/* color services */
+#ga-opensource, #ga-opensource i.service-icon {
+    color: #885DB0;
+    border-color: #885DB0;
+}
+#ga-write, #ga-write i.service-icon {
+    color: #736BB8;
+    border-color: #736BB8;
+}
+#ga-perf, #ga-perf i.service-icon {
+    color: #5D7FC1;
+    border-color: #5D7FC1;
+}
+#ga-music, #ga-music i.service-icon {
+    color: #61A6C5;
+    border-color: #61A6C5;
+}
 /* ------------------------------------
    Callout 
    ------------------------------------*/
@@ -288,7 +311,10 @@ i.service-icon {
     background-size: cover;
 }
 .callout h2 {
-    font-size: 30px;
+    /*font-size: 30px;*/
+    font-size: 3.2em;
+    color: white;
+    margin-bottom: 30px;
 }
 
 /* ------------------------------------
@@ -298,8 +324,14 @@ i.service-icon {
 .call-to-action {
     color: #ffffff;
     background: #FF974F;
-    padding: 65px 0;
+    padding: 0 15px 0 15px;
 }
+
+.call-to-action h2 {
+    font-size: 3em;
+    padding: 0 15px 0 15px;
+}
+
 .call-to-action .btn {
     margin: 10px;
 }
@@ -327,6 +359,6 @@ footer {
    ------------------------------------*/
 
 .lead {
-    width: 500px;
+    width: 525px;
     margin: 0 auto;
 }
