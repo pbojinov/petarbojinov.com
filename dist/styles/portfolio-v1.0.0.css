@@ -7520,6 +7520,8 @@ i.service-icon {
 
 .call-to-action h2 span.first {
     font-weight: bold;
+    display: block;
+    margin-bottom: 20px;
 }
 
 .call-to-action h2 span {
@@ -7531,6 +7533,9 @@ i.service-icon {
     margin: 10px;
 }
 
+.first-list {
+    margin-bottom: 35px;
+}
 
 /* ------------------------------------
    Footer 
