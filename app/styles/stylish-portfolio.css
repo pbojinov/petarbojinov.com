@@ -138,24 +138,12 @@ h1, h2, h3, h4, h5, h6, p {
     text-shadow: none;
     font-weight: 200;
 }
-.header .intro-button:hover {
+.header .intro-button:hover, .header .intro-button:focus {
     /*background-color: rgba(255, 255, 255, 0.5);*/
     color: white;
     background-color: #FF974F;
 }
 
-/* 
-  make the c2a button a more visible color on smaller height screens
-  because the dark colors conflict with the bottom of the background image 
-*/
-@media screen and (max-height: 600px) {
-    #top h1 {
-        padding: 0 15px 0 15px
-    }
-    .call-to-action .next-section-text {
-        left: 50%;
-    }
-}
 /* ------------------------------------
    Intro 
    ------------------------------------*/
@@ -164,9 +152,9 @@ h1, h2, h3, h4, h5, h6, p {
     z-index: 1;
 }
 #intro {
-    position: relative;
+/*    position: relative;
     z-index: 0;
-    padding: 65px 0;
+*/    padding: 65px 0;
     color: #2C3E50;
     /*background-color: #ECF0F1;*/
     background: linear-gradient(-105deg, #63bdc6, #5d7bc1 40%, #9753aa);
@@ -226,7 +214,7 @@ h3, h2 {
     letter-spacing: 0.5px;
     font-weight: bold;
 }
-.callout a:hover h4 {
+.callout a:hover h4, .callout a:focus h4 {
     text-decoration: none;
     color: white;
 }
@@ -256,23 +244,23 @@ i.service-icon {
     -webkit-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
 }
-.interests:hover {
+.interests:hover, .interests:focus  {
     /*background-color: #4AA3DF;*/
     cursor: pointer;
     /*box-shadow: 0 5px 5px -5px #0886db;*/
 }
-.interests:hover i.service-icon {
+.interests:hover i.service-icon, .interests:focus i.service-icon {
     font-size: 100px;
 }
-.interests:hover i.fa-github {
+.interests:hover i.fa-github, .interests:focus i.fa-github {
     font-size: 125px;
 }
-.interests:hover i.fa-pencil {
+.interests:hover i.fa-pencil, .interests:focus i.fa-pencil {
     -webkit-transform: translatez(0) rotate(-45deg);
     -ms-transform: translatez(0) rotate(-45deg);
     transform: translatez(0) rotate(-45deg);
 }
-.interests:hover i.fa-rocket {
+.interests:hover i.fa-rocket, .interests:focus i.fa-rocket {
     -webkit-transform: translatez(0) rotate(-45deg);
     -ms-transform: translatez(0) rotate(-45deg);
     transform: translatez(0) rotate(-45deg);
@@ -349,7 +337,7 @@ footer {
     -webkit-transition: all 0.2s ease 0s;
     transition: all 0.2s ease 0s;
 }
-.contact-icons a:hover {
+.contact-icons a:hover, .contact-icons a:focus {
     text-decoration: none;
     color: white;
 }
@@ -361,4 +349,54 @@ footer {
 .lead {
     width: 525px;
     margin: 0 auto;
+}
+
+/* ------------------------------------
+   Responsive Stuff
+   ------------------------------------*/
+
+
+@media screen and (max-width: 600px) {
+    /* top */
+    .vert-text h1 {
+        padding: 0 15px 0 15px
+    }
+    /* purple section */
+    #intro h2 {
+        font-size: 2em;
+        text-shadow: 0 0;
+    }
+    .col-xxs-12  {
+        width: 100%;
+        float: left;
+        position: relative;
+        min-height: 1px;
+        padding-right: 15px;
+        padding-left: 15px; 
+    }
+    /* interests - animated bubbles section */
+    .callout h2 {
+        margin-top: 50px;
+        font-size: 2.2em;
+    }
+    .interests:last-child {
+        margin-bottom: 50px;
+    }
+    /* social links */
+    .call-to-action .vert-text {
+        font-size: 0.9em;
+        padding: 50px 15px 50px 15px;
+    }
+    .next-section-text {
+        position: static;
+        text-align: center;
+        padding-top: 50px;
+    }
+    /* general  */
+    .next-section {
+        left: 45%;
+    }
+    .call-to-action .next-section-text {
+        left: 50%;
+    }
 }

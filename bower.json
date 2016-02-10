@@ -5,7 +5,8 @@
     "jquery": "~1.10.2",
     "bootstrap": "~3.3.6",
     "okvideo": "~2.3.3",
-    "font-awesome": "~4.5.0"
+    "font-awesome": "~4.5.0",
+    "font-awesome-animation": "~0.0.8"
   },
   "devDependencies": {}
 }

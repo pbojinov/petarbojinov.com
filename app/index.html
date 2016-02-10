@@ -20,6 +20,8 @@
     <!-- third-party CSS -->
     <link href="bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
     <link href="bower_components/font-awesome/css/font-awesome.css" rel="stylesheet">
+    <!-- <link href="bower_components/font-awesome-animation/dist/font-awesome-animation.min.css" rel="stylesheet"> -->
+    <link href="styles/faa-animation.css" rel="stylesheet">
     <link href="styles/animate-custom.css" rel="stylesheet">
     <!-- Add custom CSS here -->
     <link href="styles/stylish-portfolio.css" rel="stylesheet">
@@ -56,7 +58,7 @@
                 <div>
                     <h1 data-sr="wait 0.1s and then enter bottom and scale up 30%">Petar Bojinov</h1>
                     <h3 data-sr="wait 0.2s and then enter bottom and scale up 30%">
-                        Creative and intuitive solutions <br>for the web.
+                        Creative and intuitive solutions <br class="hidden-xs">for the web.
                     </h3>
 
                     <a href="#intro" class="btn btn-default btn-lg intro-button" data-sr="wait 0.3s and then enter bottom and scale up 50%">About Me</a>
@@ -74,29 +76,27 @@
 
     <!-- Intro -->
     <div id="intro" class="intro full-screen">
-<!--         <div class="container">
-            <div class="row">
- -->            
-                <div id="large-header" class="large-header" data-sr="wait 0.2s and then enter bottom and scale up 30%">
-                    <canvas id="canvas-triangles"></canvas>
+
+<!--             <div id="large-header" class="large-header" data-sr="wait 0.2s and then enter bottom and scale up 30%">
+                <canvas id="canvas-triangles"></canvas>
+            </div> -->
+            <div class="vert-text">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 col-md-offset-3 text-center">                              
+                            <h2 data-sr="wait 0.2s and then enter left please, and hustle 50px">Specializing in web based technologies.</h2>
+                            <p class="lead" data-sr="wait 0.4s and then enter left please, and hustle 50px">Passionate about making products that millions of people use on a daily basis.</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="vert-text">
-                <!-- <div class="col-md-6 col-md-offset-3 text-center"> -->
-                    <!-- <i class="icon-screenshot icon-5x"></i> -->
-                    <!-- <i class="icon-bullseye icon-4x"></i> -->
-                    <!-- <i class="icon-cloud icon-4x"></i> -->
-                    <h2 data-sr="wait 0.2s and then enter left please, and hustle 50px">Specializing in web based technologies.</h2>
-                    <p class="lead" data-sr="wait 0.4s and then enter left please, and hustle 50px">Passionate about making products that millions of people use on a daily basis.</p>
-                </div>
-                <div class="next-section" data-next="#services" data-sr="wait 0.5s and then enter left please, and hustle 50px">
-                    <span class="fa-stack fa-lg">
-                      <i class="fa fa-circle fa-stack-2x inverse"></i>
-                      <i class="fa fa-chevron-down fa-stack-1x "></i>
-                    </span>                    
-                </div>
-<!--             </div>
-        </div>
- -->    </div>
+            </div>
+            <div class="next-section" data-next="#services" data-sr="wait 0.5s and then enter left please, and hustle 50px">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x inverse"></i>
+                  <i class="fa fa-chevron-down fa-stack-1x "></i>
+                </span>                    
+            </div>
+    </div>
     <!-- /Intro -->
 
     <!-- Services -->
@@ -109,33 +109,33 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div id="ga-opensource" class="col-xs-6 col-sm-3 col-md-2 col-lg-2 col-md-offset-2 text-center interests" data-sr="wait 0.4s and then ease-in-out 100px">
+                    <div id="ga-opensource" class="col-xxs-12 col-xs-6 col-sm-3 col-md-2 col-lg-2 col-md-offset-2 text-center interests" data-sr="wait 0.4s and then ease-in-out 100px">
                         <div class="service-item">
                             <i class="service-icon fa fa-github"></i>
                             <h4>Open Source Software</h4>
                         </div>
                     </div>
 
-                    <div id="ga-write" class="col-xs-6 col-sm-3 col-md-2 col-lg-2 text-center interests" data-sr="wait 0.6s and then ease-in-out 100px">
+                    <div id="ga-write" class="col-xxs-12  col-xs-6 col-sm-3 col-md-2 col-lg-2 text-center interests" data-sr="wait 0.6s and then ease-in-out 100px">
                         <div class="service-item">
                             <i class="service-icon fa fa-pencil"></i>
                             <h4>Writing About Technology</h4>
                         </div>
                     </div>
-                    <div id="ga-perf" class="col-xs-6 col-sm-3 col-md-2 col-lg-2 text-center interests" data-sr="wait 0.8s and then ease-in-out 100px">
+                    <div id="ga-perf" class="col-xxs-12  col-xs-6 col-sm-3 col-md-2 col-lg-2 text-center interests" data-sr="wait 0.8s and then ease-in-out 100px">
                         <div class="service-item">
                             <i class="service-icon fa fa-rocket"></i>
                             <h4>Application Performance</h4>
                         </div>
                     </div>
-                    <div id="ga-music" class="col-xs-6 col-sm-3 col-md-2 col-lg-2 text-center interests" data-sr="wait 1.0s and then ease-in-out 100px">
+                    <div id="ga-music" class="col-xxs-12  col-xs-6 col-sm-3 col-md-2 col-lg-2 text-center interests" data-sr="wait 1.0s and then ease-in-out 100px">
                         <div class="service-item">
                             <i class="service-icon fa fa-music"></i>
                             <h4>Music <br/>Production</h4>
                         </div>
                     </div>
                 </div><!--end .row-->
-                <div class="next-section" data-next=".call-to-action" data-sr="wait 0.5s and then enter left please, and hustle 50px">
+                <div class="next-section" data-next="#c2a" data-sr="wait 0.5s and then enter left please, and hustle 50px">
                     <span class="fa-stack fa-lg">
                       <i class="fa fa-circle fa-stack-2x"></i>
                       <i class="fa fa-chevron-down fa-stack-1x inverse"></i>
@@ -159,60 +159,68 @@
     <!-- /Callout -->
 
     <!-- Call to Action -->
-    <div class="call-to-action full-screen">
+    <div id="c2a" class="call-to-action full-screen">
         <div class="vert-text">
             <div class="row">
                 <div class="col-xs-12">
-                    <h2 data-sr="enter bottom and scale up 30% over 0.6s">I would love to hear from you. <br class="visible-xs-block"/><br class="visible-xs-block visible-sm-block visible-md-block"/>Lets get in touch. </h2>
+                    <h2 data-sr="enter bottom and scale up 30% over 0.6s">Lets get in touch.<br class="visible-xs-block"/><br class="visible-xs-block visible-sm-block visible-md-block"/><span>I would love to hear from you. </span></h2>
                 </div>
             </div>
             <p>
             <ul class="list-inline contact-icons" data-sr="wait 0.3s and then enter bottom and scale up 30% over 1.2s">
                <li>
                    <a id="ga-github" href="https://github.com/pbojinov" target="_blank">
-                        <i class="fa fa-github fa-4x"></i>
+                        <i class="fa fa-github fa-4x hidden-xs"></i>
+                        <i class="fa fa-github fa-3x visible-xs-inline"></i>
                     </a>
                 </li>
                 <li>
                     <a id="ga-twitter" href="https://twitter.com/pbojinov" target="_blank">
-                        <i class="fa fa-twitter fa-4x"></i>
+                        <i class="fa fa-twitter fa-4x hidden-xs"></i>
+                        <i class="fa fa-twitter fa-3x visible-xs-inline"></i>
                     </a>
                 </li>
                 <li>
                     <a id="ga-linkedin" href="https://www.linkedin.com/pub/petar-bojinov/17/193/78a" target="_blank">
-                        <i class="fa fa-linkedin-square fa-4x"></i>
+                        <i class="fa fa-linkedin-square fa-4x hidden-xs"></i>
+                        <i class="fa fa-linkedin-square fa-3x visible-xs-inline"></i>
                     </a>
                 </li>
                 <li>
                     <a id="ga-stackoverflow" href="https://stackoverflow.com/users/907388/pbojinov" target="_blank">
-                        <i class="fa fa-stack-overflow fa-4x"></i>
+                        <i class="fa fa-stack-overflow fa-4x hidden-xs"></i>
+                        <i class="fa fa-stack-overflow fa-3x visible-xs-inline"></i>
                     </a>
                 </li>
-                <li>
+<!--                 <li>
                     <a id="ga-mail" href="mailto:petarbojinov@gmail.com?subject=Hey Petar, I got a question for you">     
                     <i class="fa fa-envelope fa-4x"></i>
                     </a>
-                </li>
-            </ul>
+                </li> -->
+            </ul>         
             <ul class="list-inline contact-icons" data-sr="wait 0.3s and then enter bottom and scale up 30% over 1.2s">
                 <li>
                     <a id="ga-medium" href="https://medium.com/@pbojinov" target="_blank">
-                        <i class="fa fa-medium fa-3x"></i>
+                        <i class="fa fa-medium fa-4x hidden-xs"></i>
+                        <i class="fa fa-medium fa-3x visible-xs-inline"></i>
                     </a>
                 </li>
                 <li>
                     <a id="ga-soundcloud" href="https://soundcloud.com/almanor" target="_blank">
-                        <i class="fa fa-soundcloud fa-3x"></i>
+                        <i class="fa fa-soundcloud fa-4x hidden-xs"></i>
+                        <i class="fa fa-soundcloud fa-3x visible-xs-inline"></i>
                     </a>
                 </li>
                 <li>
                     <a id="ga-vimeo" href="https://vimeo.com/user6674925" target="_blank">
-                        <i class="fa fa-vimeo fa-3x"></i>
+                        <i class="fa fa-vimeo fa-4x hidden-xs"></i>
+                        <i class="fa fa-vimeo fa-3x visible-xs-inline"></i>
                     </a>
                 </li>
                 <li>
                     <a id="ga-book" href="http://petarbooks.tumblr.com/" target="_blank">
-                        <i class="fa fa-book fa-3x"></i>
+                        <i class="fa fa-book fa-4x hidden-xs"></i>
+                        <i class="fa fa-book fa-3x visible-xs-inline"></i>
                     </a>
                 </li>
             </ul>
@@ -228,7 +236,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6 col-md-offset-3 text-center" data-sr="enter bottom and scale up 30% over 1s">
-                    <p>Made with <i class="fa fa-heart text-danger"></i> in San Francisco
+                    <p>Made with <i class="faa-parent faa-burst animated fa fa-heart text-danger"></i> in San Francisco
                     <br><br>
                     <i class="fa fa-copyright"></i> 2016 Petar Bojinov</p>
                 </div>
