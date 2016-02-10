@@ -26,7 +26,7 @@ h1, h2, h3, h4, h5, h6, p {
     text-shadow: none;
 }
 .background-mask-dark {
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.55);
 }
 .vert-text {
     display: table-cell;
@@ -347,7 +347,7 @@ footer {
    ------------------------------------*/
 
 .lead {
-    width: 525px;
+    max-width: 525px;
     margin: 0 auto;
 }
 
@@ -365,6 +365,10 @@ footer {
     #intro h2 {
         font-size: 2em;
         text-shadow: 0 0;
+    }
+    #intro p {
+        padding: 0 15px 0 15px;
+        font-size: 1.2em;
     }
     .col-xxs-12  {
         width: 100%;
