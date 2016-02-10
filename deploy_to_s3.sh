@@ -5,7 +5,7 @@ echo '========================================================='
 
 echo -e '\n-- Deploying to aws s3: petarbojinov.com ------------------\n'
 
-aws s3 sync app/ s3://petarbojinov --profile personal \
+aws s3 sync  --profile personal --region us-west-1 dist/ s3://petarbojinov.com \
     --exclude ".git/*" \
 
 echo -e '\n========================================================='
