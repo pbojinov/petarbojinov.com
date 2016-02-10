@@ -119,7 +119,8 @@ h1, h2, h3, h4, h5, h6, p {
     /*background: url(../images/bg.jpg) no-repeat center center fixed;*/
     /*background: url(../images/san_francisco_skyline_9313.jpg) no-repeat center center fixed;*/
     
-    background: url(../images/sf-alcatraz.jpg) no-repeat center center fixed;
+    /*background: url(../images/sf-alcatraz.jpg) no-repeat center center fixed;*/
+    background: url(../images/new-bay-bridge.jpeg) no-repeat center center fixed;
     background-size: cover;
 }
 .header .vert-text {

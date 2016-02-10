@@ -2,6 +2,8 @@
 <html lang="en">
 
 <head>
+    <!-- <link href='http://fonts.googleapis.com/css?family=Roboto:400,100' rel='stylesheet' type='text/css'> -->
+    <link href='https://fonts.googleapis.com/css?family=Arimo:400,700' rel='stylesheet' type='text/css'>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Petar Bojinov is a full-stack developer that lives on the web. His loves to mkae products that relay their message to millions of consumers and are used on a daily basis.">
@@ -10,11 +12,10 @@
     <title>Page Not Found - Petar Bojinov</title>
 
     <!-- ref:css styles/<%= buildNumber %>.min.css -->
-    <!-- Bootstrap core CSS -->
-    <link href="styles/bootstrap-cleaned.css" rel="stylesheet">
+    <!-- third-party CSS -->
+    <link href="bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
     <!-- Add custom CSS here -->
     <link href="styles/stylish-portfolio.css" rel="stylesheet">
-    <link href="styles/animate-custom.css" rel="stylesheet">
     <!-- endref -->
 
     <script async>
@@ -34,51 +35,38 @@
     </script>
 </head>
 
+<style>
+    .header {
+    background: url(images/new-bay-bridge.jpeg) no-repeat center center fixed;
+    background-size: cover;
+    }
+</style>
+
 <body>
 
     <!-- Full Page Image Header Area -->
-    <div id="top" class="header">
-        <div class="vert-text">
-            <div class="animated bounceInRight">
-                <h1>404</h1>
-                <h2>I couldn't the find that page.</h2>
-            </div>
-            <div class="animated fadeInUpBig">
-                <h3>Redirecting in
-                    <span id="time"></span> seconds...</h3>
-                <a id="ga-404" href="http://petarbojinov.com" class="btn btn-default btn-lg">Go Back In Time!</a>
+    <div id="top" class="header full-screen">
+        <div class="vert-text background-mask-dark">
+            <div class="reveal-wrapper">            
+                <div>
+                    <h1 data-sr="wait 0.1s and then enter bottom and scale up 30%">Four OH Four</h1>
+                    <h3 data-sr="wait 0.2s and then enter bottom and scale up 30%">
+                        Looks like your broke the interwebs
+                    </h3>
+
+                    <a href="#intro" class="btn btn-default btn-lg intro-button" data-sr="wait 0.3s and then enter bottom and scale up 50%">About Me</a>
+                </div>
             </div>
         </div>
     </div>
     <!-- /Full Page Image Header Area -->
-
+    <!-- /Footer -->
 
     <!-- ref:js scripts/<%= buildNumber %>.min.js -->
     <!-- Bootstrap core JavaScript -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script async src="scripts/jquery.js"></script>
-    <script async src="scripts/bootstrap.min.js"></script>
-    <script async src="scripts/portfolio.js"></script>
     <!-- endref -->
 
-    <script async>
-    window.onload = function() {
-        var timeDom = document.getElementById('time'),
-            seconds = 8, //how long you want the redirect counter to be
-            counter = setInterval(timer, 1000),
-            redirectUrl = 'http://petarbojinov.com';
-        timeDom.innerHTML = seconds; //set intial time in the DOM to our seconds specified
-
-        function timer() {
-            seconds = seconds - 1;
-            if (seconds <= 0) {
-                clearInterval(counter);
-                window.location.href = redirectUrl;
-            }
-            timeDom.innerHTML = seconds;
-        }
-    }
-    </script>
 </body>
 
 </html>
