@@ -82,3 +82,12 @@ $('.next-action').on('click', function() {
         scrollTop: $(nextSection).offset().top
     }, 500);
 });
+
+
+// add a bouncing animation to the next action button to draw some attention
+$(document).ready(function() {
+    var bounceAfter = 2000;
+    window.setTimeout(function() {
+        $('.next-action').addClass('animated bounce');
+    }, bounceAfter);
+});
