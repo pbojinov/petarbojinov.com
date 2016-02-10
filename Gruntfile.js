@@ -30,7 +30,7 @@ module.exports = function(grunt) {
                 src: [
                     'app/scripts/jquery.js', 
                     'app/bower_components/jquery-debounce/jquery.debounce.js', 
-                    'app/bower_components/scrollReveal.js/dist/scrollReveal.js', 
+                    'app/bower_components/scrollreveal/dist/scrollreveal.min.js', 
                     'app/scripts/bootstrap.min.js', 
                     'app/scripts/portfolio.js',
                     'app/scripts/TweenLite.min.js',

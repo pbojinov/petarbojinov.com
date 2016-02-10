@@ -81,7 +81,9 @@ if(!jQuery)throw new Error("Bootstrap requires jQuery");+function(a){"use strict
 
 var PB = (function() {
     // $('.callout').okvideo({ video: 'https://vimeo.com/86394920' });
-    window.sr = new scrollReveal();
+    window.sr = new scrollReveal({
+        mobile: false
+    });
 })();
 
 /**

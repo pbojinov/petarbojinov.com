@@ -4,7 +4,9 @@
 
 var PB = (function() {
     // $('.callout').okvideo({ video: 'https://vimeo.com/86394920' });
-    window.sr = new scrollReveal();
+    window.sr = new scrollReveal({
+        mobile: false
+    });
 })();
 
 /**
@@ -76,18 +78,17 @@ $('#ga-book').on('click', function() {
 });
 
 /** Next Section Pagination */
-$('.next-action').on('click', function() {
+var bounceAfter = 3000;
+var $nextAction = $('.next-action');
+
+// add a bouncing animation to the next action button to draw some attention
+$(document).ready(function() {
+    $nextAction.addClass('animated bounce');
+});
+
+$nextAction.on('click', function() {
     var nextSection = $(this).data('next');
     $('html, body').animate({
         scrollTop: $(nextSection).offset().top
     }, 500);
-});
-
-
-// add a bouncing animation to the next action button to draw some attention
-$(document).ready(function() {
-    var bounceAfter = 2000;
-    window.setTimeout(function() {
-        $('.next-action').addClass('animated bounce');
-    }, bounceAfter);
 });

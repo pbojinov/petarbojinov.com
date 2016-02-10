@@ -1,12 +1,13 @@
 {
   "name": "petarbojinov-com",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "dependencies": {
     "jquery": "~1.10.2",
     "bootstrap": "~3.3.6",
     "okvideo": "~2.3.3",
     "font-awesome": "~4.5.0",
-    "font-awesome-animation": "~0.0.8"
+    "font-awesome-animation": "~0.0.8",
+    "scrollreveal": "2.3.2"
   },
   "devDependencies": {}
 }

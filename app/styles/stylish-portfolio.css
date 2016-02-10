@@ -2,13 +2,20 @@
    Global Styles 
    ------------------------------------*/
 
-html, body {
-    height:100%;
-    width:100%;
+html,
+body {
+    height: 100%;
+    width: 100%;
     font-family: 'Arimo', sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6, p {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p, li {
     font-family: 'Arimo', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: antialiased;
@@ -20,22 +27,27 @@ h1, h2, h3, h4, h5, h6, p {
     color: #fff;
     text-shadow: none;
 }
+
 ::selection {
     background: #9b59b6;
     color: #fff;
     text-shadow: none;
 }
+
 .background-mask-dark {
-    background-color: rgba(0, 0, 0, 0.55);
+    background-color: rgba(0, 0, 0, 0);
 }
+
 .vert-text {
     display: table-cell;
     vertical-align: middle;
     text-align: center;
 }
+
 .background-mask-dark.darker {
-    background-color: rgba(0, 0, 0, 0.8);    
+    background-color: rgba(0, 0, 0, 0.8);
 }
+
 .vert-text h1 {
     padding: 0;
     margin: 0;
@@ -59,12 +71,14 @@ h1, h2, h3, h4, h5, h6, p {
     transition: color 0.2s ease-in-out;
 }
 
-.next-section:hover .fa-circle, .next-section:focus .fa-circle {
-    color: rgba(250,250,250,0.8);
+.next-section:hover .fa-circle,
+.next-section:focus .fa-circle {
+    color: rgba(250, 250, 250, 0.8);
 }
 
-.next-section:hover .fa-circle.inverse, .next-section:focus .fa-circle.inverse {
-    color: rgba(0,0,0,0.4);
+.next-section:hover .fa-circle.inverse,
+.next-section:focus .fa-circle.inverse {
+    color: rgba(0, 0, 0, 0.4);
 }
 
 .next-section-text {
@@ -76,7 +90,8 @@ h1, h2, h3, h4, h5, h6, p {
     top: 60px;
 }
 
-.next-section-text:hover, .next-section-text:focus {
+.next-section-text:hover,
+.next-section-text:focus {
     opacity: 1.0;
     cursor: pointer;
 }
@@ -85,9 +100,11 @@ h1, h2, h3, h4, h5, h6, p {
     font-size: 1.2em;
 }
 
+
 /* first pair */
+
 .next-section .fa-circle {
-    color: rgba(250,250,250,0.2);
+    color: rgba(250, 250, 250, 0.2);
 }
 
 .next-section .fa-chevron-down {
@@ -95,53 +112,70 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .next-section .fa-circle.inverse {
-    color: rgba(0,0,0,0.2);
+    color: rgba(0, 0, 0, 0.2);
 }
 
 .next-section .fa-chevron-down.inverse {
-    color: rgba(250,250,250,0.6);
+    color: rgba(250, 250, 250, 0.6);
 }
+
 
 /* ------------------------------------
    Full Page Image Header Area 
    ------------------------------------*/
+
 #top h3 {
     padding-left: 15px;
     padding-right: 15px;
     line-height: 1.2em;
 }
+
 .full-screen {
     display: table;
     height: 100%;
     width: 100%;
     position: relative;
 }
+
 .header {
     /*background: url(../images/bg.jpg) no-repeat center center fixed;*/
     /*background: url(../images/san_francisco_skyline_9313.jpg) no-repeat center center fixed;*/
-    
     /*background: url(../images/new-bay-bridge.jpeg) no-repeat center center fixed;*/
-    background: url(../images/sf-alcatraz.jpg) no-repeat center center fixed;
-    background-size: cover;
+    /*    background: url(../images/sf-alcatraz.jpg) no-repeat center center fixed;
+    background-size: cover;*/
 
-/*background: rgba(26,48,87,1);
-background: -moz-linear-gradient(top, rgba(26,48,87,1) 0%, rgba(59,66,71,1) 53%, rgba(78,70,57,1) 100%);
-background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(26,48,87,1)), color-stop(53%, rgba(59,66,71,1)), color-stop(100%, rgba(78,70,57,1)));
-background: -webkit-linear-gradient(top, rgba(26,48,87,1) 0%, rgba(59,66,71,1) 53%, rgba(78,70,57,1) 100%);
-background: -o-linear-gradient(top, rgba(26,48,87,1) 0%, rgba(59,66,71,1) 53%, rgba(78,70,57,1) 100%);
-background: -ms-linear-gradient(top, rgba(26,48,87,1) 0%, rgba(59,66,71,1) 53%, rgba(78,70,57,1) 100%);
-background: linear-gradient(to bottom, rgba(26,48,87,1) 0%, rgba(59,66,71,1) 53%, rgba(78,70,57,1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1a3057', endColorstr='#4e4639', GradientType=0 );
+    /*green yellow*/
+/*    background: rgba(215, 207, 96, 1);
+    background: -moz-linear-gradient(top, rgba(215, 207, 96, 1) 0%, rgba(51, 113, 95, 1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(215, 207, 96, 1)), color-stop(100%, rgba(51, 113, 95, 1)));
+    background: -webkit-linear-gradient(top, rgba(215, 207, 96, 1) 0%, rgba(51, 113, 95, 1) 100%);
+    background: -o-linear-gradient(top, rgba(215, 207, 96, 1) 0%, rgba(51, 113, 95, 1) 100%);
+    background: -ms-linear-gradient(top, rgba(215, 207, 96, 1) 0%, rgba(51, 113, 95, 1) 100%);
+    background: linear-gradient(to bottom, rgba(215, 207, 96, 1) 0%, rgba(51, 113, 95, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#d7cf60', endColorstr='#33715f', GradientType=0);
 */
+
+/* sf background gradient */
+background: rgba(50,72,103,1);
+background: -moz-linear-gradient(top, rgba(50,72,103,1) 0%, rgba(77,100,122,1) 57%, rgba(155,129,95,1) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(50,72,103,1)), color-stop(57%, rgba(77,100,122,1)), color-stop(100%, rgba(155,129,95,1)));
+background: -webkit-linear-gradient(top, rgba(50,72,103,1) 0%, rgba(77,100,122,1) 57%, rgba(155,129,95,1) 100%);
+background: -o-linear-gradient(top, rgba(50,72,103,1) 0%, rgba(77,100,122,1) 57%, rgba(155,129,95,1) 100%);
+background: -ms-linear-gradient(top, rgba(50,72,103,1) 0%, rgba(77,100,122,1) 57%, rgba(155,129,95,1) 100%);
+background: linear-gradient(to bottom, rgba(50,72,103,1) 0%, rgba(77,100,122,1) 57%, rgba(155,129,95,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#324867', endColorstr='#9b815f', GradientType=0 );
 }
+
 .header .vert-text {
     color: #ECF0F1;
 }
+
 .header h3 {
     color: #ECF0F1;
     font-weight: 100;
     letter-spacing: 1px;
 }
+
 .header .intro-button {
     display: none;
     color: #ECF0F1;
@@ -154,27 +188,34 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1a3057', end
     text-shadow: none;
     font-weight: 200;
 }
-.header .intro-button:hover, .header .intro-button:focus {
+
+.header .intro-button:hover,
+.header .intro-button:focus {
     /*background-color: rgba(255, 255, 255, 0.5);*/
     color: white;
     background-color: #FF974F;
 }
 
+
 /* ------------------------------------
    Intro 
    ------------------------------------*/
+
 #large-header {
     position: absolute;
     z-index: 1;
 }
+
 #intro {
-/*    position: relative;
+    /*    position: relative;
     z-index: 0;
-*/    padding: 65px 0;
+*/
+    /*padding: 65px 0;*/
     color: #2C3E50;
     /*background-color: #ECF0F1;*/
     background: linear-gradient(-105deg, #63bdc6, #5d7bc1 40%, #9753aa);
 }
+
 #intro h2 {
     font-size: 3.2em;
     color: white;
@@ -183,6 +224,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1a3057', end
     line-height: 1.3em;
     font-weight: bold;
 }
+
 #intro p {
     /*color: #DFDFDF;*/
     /*color: white;*/
@@ -191,6 +233,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1a3057', end
     font-size: 2.2em;
     font-weight: bold;
 }
+
 #intro .vert-text {
     position: relative;
     z-index: 2;
@@ -207,15 +250,18 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1a3057', end
     -webkit-transition: all 1s ease 0s;
     transition: all 1s ease 0s;
     /* box-shadow: 0 -2px 2px -2px #99c3ea; */
-    
     margin-left: 0px;
 }
+
 .profile-picture img:hover {
     -webkit-filter: grayscale(100%);
 }
-h3, h2 {
+
+h3,
+h2 {
     margin: 10px 0 15px 0;
 }
+
 
 /* ------------------------------------
    Services 
@@ -234,13 +280,17 @@ h3, h2 {
     letter-spacing: 0.5px;
     /*font-weight: bold;*/
 }
-.callout a:hover h4, .callout a:focus h4 {
+
+.callout a:hover h4,
+.callout a:focus h4 {
     text-decoration: none;
     color: white;
 }
+
 .service-item {
     margin-bottom: 15px;
 }
+
 i.service-icon {
     border: 3px solid #ffffff;
     border-radius: 50%;
@@ -256,6 +306,7 @@ i.service-icon {
     -webkit-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
 }
+
 .interests {
     /*margin-right: 15px;*/
     padding-top: 10px;
@@ -264,45 +315,66 @@ i.service-icon {
     -webkit-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
 }
-.interests:hover, .interests:focus  {
+
+.interests:hover,
+.interests:focus {
     /*background-color: #4AA3DF;*/
     cursor: pointer;
     /*box-shadow: 0 5px 5px -5px #0886db;*/
 }
-.interests:hover i.service-icon, .interests:focus i.service-icon {
+
+.interests:hover i.service-icon,
+.interests:focus i.service-icon {
     font-size: 100px;
 }
-.interests:hover i.fa-github, .interests:focus i.fa-github {
+
+.interests:hover i.fa-github,
+.interests:focus i.fa-github {
     font-size: 125px;
 }
-.interests:hover i.fa-pencil, .interests:focus i.fa-pencil {
-    -webkit-transform: translatez(0) rotate(-45deg);
-    -ms-transform: translatez(0) rotate(-45deg);
-    transform: translatez(0) rotate(-45deg);
-}
-.interests:hover i.fa-rocket, .interests:focus i.fa-rocket {
+
+.interests:hover i.fa-pencil,
+.interests:focus i.fa-pencil {
     -webkit-transform: translatez(0) rotate(-45deg);
     -ms-transform: translatez(0) rotate(-45deg);
     transform: translatez(0) rotate(-45deg);
 }
 
+.interests:hover i.fa-rocket,
+.interests:focus i.fa-rocket {
+    -webkit-transform: translatez(0) rotate(-45deg);
+    -ms-transform: translatez(0) rotate(-45deg);
+    transform: translatez(0) rotate(-45deg);
+}
+
+
 /* color services */
-#ga-opensource, #ga-opensource i.service-icon {
+
+#ga-opensource,
+#ga-opensource i.service-icon {
     color: #885DB0;
     border-color: #885DB0;
 }
-#ga-write, #ga-write i.service-icon {
+
+#ga-write,
+#ga-write i.service-icon {
     color: #736BB8;
     border-color: #736BB8;
 }
-#ga-perf, #ga-perf i.service-icon {
+
+#ga-perf,
+#ga-perf i.service-icon {
     color: #5D7FC1;
     border-color: #5D7FC1;
 }
-#ga-music, #ga-music i.service-icon {
+
+#ga-music,
+#ga-music i.service-icon {
     color: #61A6C5;
     border-color: #61A6C5;
 }
+
+
 /* ------------------------------------
    Callout 
    ------------------------------------*/
@@ -318,6 +390,7 @@ i.service-icon {
     background-attachment: fixed;
     background-size: cover;
 }
+
 .callout h2 {
     /*font-size: 30px;*/
     font-size: 3.2em;
@@ -325,6 +398,7 @@ i.service-icon {
     margin-bottom: 30px;
     font-weight: bold;
 }
+
 
 /* ------------------------------------
    Call to Action - Get in touch
@@ -340,9 +414,11 @@ i.service-icon {
     font-size: 3em;
     padding: 0 15px 0 15px;
 }
+
 .call-to-action h2 span.first {
     font-weight: bold;
 }
+
 .call-to-action h2 span {
     font-weight: normal;
     font-size: 0.9em;
@@ -352,6 +428,7 @@ i.service-icon {
     margin: 10px;
 }
 
+
 /* ------------------------------------
    Footer 
    ------------------------------------*/
@@ -359,6 +436,7 @@ i.service-icon {
 #contact {
     position: relative;
 }
+
 footer {
     padding: 100px 0;
 }
@@ -366,15 +444,38 @@ footer {
 .contact-icons {
     margin-top: 30px;
 }
+
 .contact-icons a {
     color: #333;
     font-size: 15px;
     -webkit-transition: all 0.2s ease 0s;
     transition: all 0.2s ease 0s;
 }
-.contact-icons a:hover, .contact-icons a:focus {
+
+.contact-icons a:hover,
+.contact-icons a:focus {
     text-decoration: none;
     color: white;
+}
+
+#now h4 {
+    font-size: 1.4em;
+    line-height: 1.5em;
+}
+#now p {
+    color: white;
+    font-size: 1.3em;
+}
+#now ul {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 30px;
+}
+#now ul li {
+    list-style: none;
+    /*text-align: left;*/
+    font-size: 1.5em;
+    color: #DADADA;
 }
 
 /* ------------------------------------
@@ -394,10 +495,21 @@ footer {
     color: red;
 }
 
+
 /* ------------------------------------
    Responsive Stuff
    ------------------------------------*/
 
+@media screen and (min-width: 992px) {
+    .header {
+        background: url(../images/sf-alcatraz.jpg) no-repeat center center fixed;
+        background-size: cover;
+    }
+
+    .background-mask-dark {
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+}
 
 @media screen and (max-width: 600px) {
     /* top */
@@ -414,15 +526,25 @@ footer {
         padding: 0 20px;
         font-size: 2em;
     }
-    .col-xxs-12  {
+    .col-xxs-12 {
         width: 100%;
         float: left;
         position: relative;
         min-height: 1px;
         padding-right: 15px;
-        padding-left: 15px; 
+        padding-left: 15px;
     }
     /* interests - animated bubbles section */
+    #now .container {
+        padding-bottom: 70px;
+    }
+    #now ul {
+        padding: 0 20px 0 20px;
+    }
+    #now ul li {
+        list-style: initial;
+        text-align: left;
+    }
     .callout h2 {
         margin-top: 50px;
         font-weight: bold;
@@ -434,7 +556,6 @@ footer {
     .interests:last-child {
         margin-bottom: 50px;
     }
-
     /* social links */
     .call-to-action .vert-text {
         font-size: 0.9em;
@@ -444,6 +565,9 @@ footer {
         position: static;
         text-align: center;
         padding-top: 50px;
+    }
+    #c2a .vert-text {
+        padding-bottom: 100px;
     }
     /* footer */
     #contact p {

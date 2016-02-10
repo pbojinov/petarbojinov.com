@@ -1,6 +1,6 @@
 {
   "name": "petarbojinov-com",
-  "version": "0.0.2",
+  "version": "1.0.0",
   "dependencies": {
     "grunt": "~0.4.1",
     "grunt-contrib-copy": "~0.4.1",
@@ -26,6 +26,12 @@
     "load-grunt-tasks": "~0.1.0",
     "time-grunt": "~0.1.1",
     "grunt-contrib-compress": "~0.5.2"
+  },
+  "scripts": {
+    "build": "grunt",
+    "start": "cd app/; live-server",
+    "dev": "cd dist/; live-server",
+    "deploy": "./deploy_to_s3.sh"
   },
   "devDependencies": {},
   "engines": {

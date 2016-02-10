@@ -277,3 +277,10 @@
   -webkit-transform-origin: center bottom;
   transform-origin: center bottom;
 }
+
+.bounce-forever {
+  -webkit-animation: bounce 2s infinite linear;
+  animation: bounce 2s infinite linear;
+  -webkit-transform-origin: center bottom;
+  transform-origin: center bottom;	
+}
