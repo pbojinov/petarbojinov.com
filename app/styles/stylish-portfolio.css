@@ -42,6 +42,7 @@ h1, h2, h3, h4, h5, h6, p {
     font-size: 4em;
     font-weight: 700;
     letter-spacing: 1px;
+    line-height: 1em;
 }
 
 .next-section {
@@ -66,10 +67,12 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .next-section-text {
-    left: 46%;
+    /*left: 46%;*/
     -webkit-transition: opacity 0.2s ease-in-out;
     transition: opacity 0.2s ease-in-out;
     opacity: 0.7;
+    position: relative;
+    top: 60px;
 }
 
 .next-section-text:hover, .next-section-text:focus {
@@ -104,6 +107,7 @@ h1, h2, h3, h4, h5, h6, p {
 #top h3 {
     padding-left: 15px;
     padding-right: 15px;
+    line-height: 1.2em;
 }
 .full-screen {
     display: table;
@@ -163,12 +167,16 @@ h1, h2, h3, h4, h5, h6, p {
     font-size: 3.2em;
     color: white;
     text-shadow: 0 1.5px #8B5CAF;
+    padding: 0 20px;
+    line-height: 1.3em;
+    font-weight: bold;
 }
 #intro p {
     /*color: #DFDFDF;*/
     /*color: white;*/
     color: #232323;
-    font-size: 1.6em;
+    line-height: 1.3em;
+    font-size: 2.2em;
     font-weight: bold;
 }
 #intro .vert-text {
@@ -212,7 +220,7 @@ h3, h2 {
     line-height: 1.3em;
     font-size: 1.3em;
     letter-spacing: 0.5px;
-    font-weight: bold;
+    /*font-weight: bold;*/
 }
 .callout a:hover h4, .callout a:focus h4 {
     text-decoration: none;
@@ -303,6 +311,7 @@ i.service-icon {
     font-size: 3.2em;
     color: white;
     margin-bottom: 30px;
+    font-weight: bold;
 }
 
 /* ------------------------------------
@@ -319,17 +328,31 @@ i.service-icon {
     font-size: 3em;
     padding: 0 15px 0 15px;
 }
+.call-to-action h2 span.first {
+    font-weight: bold;
+}
+.call-to-action h2 span {
+    font-weight: normal;
+    font-size: 0.9em;
+}
 
 .call-to-action .btn {
     margin: 10px;
 }
 
+/* ------------------------------------
+   Footer 
+   ------------------------------------*/
+
+#contact {
+    position: relative;
+}
 footer {
     padding: 100px 0;
 }
 
 .contact-icons {
-    margin-top: 50px;
+    margin-top: 30px;
 }
 .contact-icons a {
     color: #333;
@@ -351,6 +374,14 @@ footer {
     margin: 0 auto;
 }
 
+.fa-stack-2x {
+    /*font-size:;*/
+}
+
+.text-danger {
+    color: red;
+}
+
 /* ------------------------------------
    Responsive Stuff
    ------------------------------------*/
@@ -363,12 +394,13 @@ footer {
     }
     /* purple section */
     #intro h2 {
-        font-size: 2em;
+        font-size: 2.5em;
         text-shadow: 0 0;
+        font-weight: bold;
     }
     #intro p {
-        padding: 0 15px 0 15px;
-        font-size: 1.2em;
+        padding: 0 20px;
+        font-size: 2em;
     }
     .col-xxs-12  {
         width: 100%;
@@ -381,11 +413,16 @@ footer {
     /* interests - animated bubbles section */
     .callout h2 {
         margin-top: 50px;
-        font-size: 2.2em;
+        font-weight: bold;
+        font-size: 2.5em;
+    }
+    .callout h4 {
+        font-size: 1.7em;
     }
     .interests:last-child {
         margin-bottom: 50px;
     }
+
     /* social links */
     .call-to-action .vert-text {
         font-size: 0.9em;
@@ -396,11 +433,16 @@ footer {
         text-align: center;
         padding-top: 50px;
     }
+    /* footer */
+    #contact p {
+        font-size: 1.3em;
+    }
     /* general  */
     .next-section {
         left: 45%;
     }
     .call-to-action .next-section-text {
-        left: 50%;
+        /*left: 50%;*/
+        /*font-size: 1.3em;*/
     }
 }

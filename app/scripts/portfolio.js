@@ -76,7 +76,7 @@ $('#ga-book').on('click', function() {
 });
 
 /** Next Section Pagination */
-$('.next-section').on('click', function() {
+$('.next-action').on('click', function() {
     var nextSection = $(this).data('next');
     $('html, body').animate({
         scrollTop: $(nextSection).offset().top

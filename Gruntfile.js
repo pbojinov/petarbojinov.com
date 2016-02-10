@@ -27,14 +27,30 @@ module.exports = function(grunt) {
         },
         concat: {
             js: {
-                src: ['app/scripts/jquery.js', 'app/scripts/bootstrap.min.js', 'app/scripts/portfolio.js'],
+                src: [
+                    'app/scripts/jquery.js', 
+                    'app/bower_components/jquery-debounce/jquery.debounce.js', 
+                    'app/bower_components/scrollReveal.js/dist/scrollReveal.js', 
+                    'app/scripts/bootstrap.min.js', 
+                    'app/scripts/portfolio.js',
+                    'app/scripts/TweenLite.min.js',
+                    'app/scripts/EasePack.min.js',
+                    'app/scripts/rAF.js',
+                    'app/scripts/triangles-explosion.js'
+                ],
                 dest: 'dist/scripts/portfolio-v<%= pkg.version %>.js',
                 options: {
                     separator: ';'
                 }
             },
             css: {
-                src: ['app/styles/bootstrap-cleaned.css', 'app/styles/font-awesome.min.css', 'app/styles/stylish-portfolio.css', 'app/styles/animate-custom.css'],
+                src: [
+                    'app/bower_components/bootstrap/dist/css/bootstrap.css', 
+                    'app/bower_components/font-awesome/css/font-awesome.min.css', 
+                    'app/styles/faa-animation.css', 
+                    'app/styles/animate-custom.css',
+                    'app/styles/stylish-portfolio.css', 
+                ],
                 dest: 'dist/styles/portfolio-v<%= pkg.version %>.css',
                 options: {
                     separator: ' '
